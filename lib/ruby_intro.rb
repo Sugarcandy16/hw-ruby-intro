@@ -2,15 +2,67 @@
 
 # Part 1
 
-def sum arr
+def sum(arr)
+	sum=0
+	if arr!=[]
+		1.upto(arr.length) do |i|
+			sum=sum+arr[i-1]
+		end
+	end
+	return sum
   # YOUR CODE HERE
 end
 
 def max_2_sum arr
+	sum=0
+	max1=-100000
+	max2=-100000
+	maxind=0
+	if arr.length>=1
+		1.upto(arr.length) do |i|
+			if arr[i-1]>max1
+				max1=arr[i-1]
+				maxind=i
+			end
+		end
+	end
+	if arr.length>1
+		1.upto(arr.length) do |i|
+			if i!=maxind
+				if arr[i-1]>max2
+					max2=arr[i-1]
+				end
+			end
+		end
+	end
+	if arr.length>1
+		sum=max1+max2
+	elsif arr.length==1
+		sum=max1
+	else
+		sum=0
+	end
+
   # YOUR CODE HERE
 end
 
 def sum_to_n? arr, n
+	ans=false
+	if arr.length==0
+		ans=false
+	elsif arr.length==1
+		ans=false
+	else
+		1.upto(arr.length) do |i|
+			(i+1).upto(arr.length) do |j|
+				if (arr[i-1]+arr[j-1])==n
+					ans=true
+				end
+			end
+		end
+	end
+	return ans
+
   # YOUR CODE HERE
 end
 
