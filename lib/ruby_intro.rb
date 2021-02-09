@@ -10,7 +10,6 @@ def sum(arr)
 		end
 	end
 	return sum
-  # YOUR CODE HERE
 end
 
 def max_2_sum arr
@@ -43,7 +42,6 @@ def max_2_sum arr
 		sum=0
 	end
 
-  # YOUR CODE HERE
 end
 
 def sum_to_n? arr, n
@@ -63,14 +61,12 @@ def sum_to_n? arr, n
 	end
 	return ans
 
-  # YOUR CODE HERE
 end
 
 # Part 2
 
 def hello(name)
 	return "Hello, "+name
-  # YOUR CODE HERE
 end
 
 def starts_with_consonant? s
@@ -80,7 +76,6 @@ def starts_with_consonant? s
 	end
 	return ans
 
-  # YOUR CODE HERE
 end
 
 def binary_multiple_of_4? s
@@ -93,7 +88,6 @@ def binary_multiple_of_4? s
 			return false
 		end
 	end
-  # YOUR CODE HERE
 end
 
 # Part 3
@@ -131,5 +125,5 @@ class BookInStock
 		@price=price
 	end
 
-# YOUR CODE HERE
+
 end
