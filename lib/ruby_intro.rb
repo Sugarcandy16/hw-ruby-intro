@@ -99,5 +99,37 @@ end
 # Part 3
 
 class BookInStock
+	def initialize(string,price)
+		if price<=0
+			raise(ArgumentError)
+		elsif string==''
+			raise(ArgumentError)
+		else
+			@isbn=string
+			@price=price
+		end
+	end
+
+	def price_as_string
+		#@price=@price.round(2)
+		"$#{format('%.02f',@price)}"
+	end
+
+	def isbn
+		@isbn
+	end
+
+	def price
+		@price
+	end
+
+	def isbn=(string)
+		@isbn=string
+	end
+
+	def price=(price)
+		@price=price
+	end
+
 # YOUR CODE HERE
 end
