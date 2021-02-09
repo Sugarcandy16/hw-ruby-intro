@@ -1,5 +1,7 @@
 # When done, submit this entire file to the autograder.
 
+# Version 2.4.0
+
 # Part 1
 
 def sum(arr)
